@@ -21,7 +21,7 @@ library CapswapV2Library {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'5b40a0c425f53b1cbf698f03cf20808086ca68cfafbab310870aa00ee7404da5' // init code hash
+                hex'b0c8165c8794e81a0f70b99700e6427abb5d0df7a5cc78b5d5479ae71d1a6eea' // init code hash
             ))));
     }
 
