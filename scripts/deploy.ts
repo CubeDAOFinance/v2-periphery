@@ -18,8 +18,8 @@ async function main() {
   console.log("Deploying contracts with the account:", deployer.address);
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
-    const factory = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
-    const weth = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
+    const factory = '0x7FF245a52d46f79fcD80ff3C83229B82f6Ba847f';
+    const weth = '0xB9164670A2F388D835B868b3D0D441fa1bE5bb00';
     const CapswapV2Router02= await ethers.getContractFactory("CapswapV2Router02");
     const router= await CapswapV2Router02.deploy(factory,weth);
     await router.deployed();
