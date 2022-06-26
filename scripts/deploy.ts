@@ -20,11 +20,11 @@ async function main() {
 
     const factory = '0x7FF245a52d46f79fcD80ff3C83229B82f6Ba847f';
     const weth = '0xB9164670A2F388D835B868b3D0D441fa1bE5bb00';
-    const CapswapV2Router02= await ethers.getContractFactory("CapswapV2Router02");
-    const router= await CapswapV2Router02.deploy(factory,weth);
+    const CubeswapV2Router02= await ethers.getContractFactory("CubeswapV2Router02");
+    const router= await CubeswapV2Router02.deploy(factory,weth);
     await router.deployed();
 
-  console.log("CapswapV2Router02 deployed to:", router.address);
+  console.log("CubeswapV2Router02 deployed to:", router.address);
   console.log("factory",await router.factory());
   console.log("WETH",await router.WETH());
 }
